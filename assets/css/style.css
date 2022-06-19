@@ -1,0 +1,54 @@
+/*colour scheme*/
+:root {
+	--orange: #f18805;
+	--darkBlue: #0e1428;
+	--lightBlue: #7b9e89;
+	--white: #fff;
+	--black: #000;
+}
+
+.button {
+	background-color: var(--orange);
+	border: 1px solid var(--black);
+	color: var(--black);
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
+}
+
+body {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	text-align: center;
+	background-color: var(--darkBlue);
+	height: 100%;
+}
+.card {
+	background: var(--white);
+	border-radius: 1rem;
+}
+
+#code-title {
+	text-align: center;
+	font-weight: bold;
+}
+.answer-item {
+	width: 90%;
+	display: inline-block;
+	border-radius: 8px;
+	padding: 3px;
+	color: black;
+}
+#title-item {
+	font-size: 1.5rem;
+	color: var(--orange);
+}
+
+#alert {
+	font-size: 1.5rem;
+	color: var(--lightBlue);
+}

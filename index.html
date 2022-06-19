@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JavaScript Code Quiz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!--container-->
-    <div class="container d-flex justify-content-center mt-5">
-        
-        <!--heading-->
-        <div class="card col-lg-8 p-4">
-            <div class="row pb-4">
-                <div class="col-lg-12">
-                    <h1>JavaScript Code-Quiz</h1>
-                    
-                    <!--timer-->
-                </div>
-                <hr>
-                <div class="col-lg-6"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript Code Quiz</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<!--container-->
+		<div class="container d-flex justify-content-center mt-5">
+			<!--heading-->
+			<div class="card col-lg-8 p-4">
+				<div class="row pb-4">
+					<div class="col-lg-12">
+						<h1>JavaScript Code-Quiz</h1>
 
-                <div class="col-lg-6">
-                    <h3 class="d-none" id="timecounter">&#9203;: <span id="timer">100</span></h3>
+						<!--timer-->
+					</div>
+					<hr />
+					<div class="col-lg-6"></div>
 
-                </div>
-            </div>
+					<div class="col-lg-6">
+						<h3 class="d-none" id="timecounter">
+							&#9203;: <span id="timer">100</span>
+						</h3>
+					</div>
+				</div>
 
-            <!--quiz-->
-            <div class="d-none" id="quiz-questions">
-                <h3 id="title-item"></h3>
-                <div class="answers mt-5 mb-5" id="question-answers">
-                </div>
-                <h3 id="alert"></h3>
-                
-            </div>
+				<!--quiz-->
+				<div class="d-none" id="quiz-questions">
+					<h3 id="title-item"></h3>
+					<div class="answers mt-5 mb-5" id="question-answers"></div>
+					<h3 id="alert"></h3>
+				</div>
 
-            <!--jumbtron-->
-            <div class="d-flex  flex-column justify-content-center mt-8 mb-10" > 
-                <p id="info">Try an answer each question within in the time limit. Note each question answered incorrectly will subtract your time by 10 seconds</p>
-                <!-- <p id="info">When you are ready click on the start button... <h3>GOOD LUCK!</h3></p> -->
-                <button id="btn-start">Start</button>
-            </div>
+				<!--jumbtron-->
+				<div class="d-flex flex-column justify-content-center mt-8 mb-10">
+					<p id="info">
+						Try an answer each question within in the time limit. Note each
+						question answered incorrectly will subtract your time by 10 seconds
+					</p>
+					<button class="button" id="btn-start">Start</button>
+				</div>
 
-            <!--score-->
-            <div class=" input-group mb-3 d-none" id="addscore">
-                <h5 class="d-block"><span id="score"></span></h5>
-                    <input type="text" class="form-control" placeholder="Enter initials:"
-                    id="inputScore">
-                    <div>
-                        <button id="btnScore">Submit</button>
-                    </div>
-            </div>
-        </div>
-    </div>
-    <script src="index.js"></script>
-    </body>
-
-
+				<!--score-->
+				<div class="input-group mb-3 d-none" id="addscore">
+					<h5 class="d-block"><span id="score"></span></h5>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Enter initials:"
+						id="inputScore"
+					/>
+					<div>
+						<button class="button" id="btnScore">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./assets/js/index.js"></script>
+	</body>
 </html>
