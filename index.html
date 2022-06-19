@@ -7,51 +7,51 @@
     <title>JavaScript Code Quiz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> -->
 </head>
 <body>
-    <!--quiz section-->
+    <!--container-->
     <div class="container d-flex justify-content-center mt-5">
         
-        <div class="card col-lg-6 p-4">
+        <!--heading-->
+        <div class="card col-lg-8 p-4">
             <div class="row pb-4">
                 <div class="col-lg-12">
                     <h1>JavaScript Code-Quiz</h1>
                     
-                    <!--start quiz button-->
+                    <!--timer-->
                 </div>
                 <hr>
                 <div class="col-lg-6"></div>
 
                 <div class="col-lg-6">
-                    <h3 class="float-right text-primary d-none" id="timecounter">Timer :<span id="timer">100</span></h3>
+                    <h3 class="d-none" id="timecounter">&#9203;: <span id="timer">100</span></h3>
 
                 </div>
             </div>
 
             <!--quiz-->
-            <div class="quiz-questions d-none" id="quiz-questions">
-                <h1 class="text-info  text-center" id="title-item"></h1>
+            <div class="d-none" id="quiz-questions">
+                <h3 id="title-item"></h3>
                 <div class="answers mt-5 mb-5" id="question-answers">
                 </div>
-                <h1 id="alert"></h1>
+                <h3 id="alert"></h3>
                 
             </div>
 
             <!--jumbtron-->
-            <div class="btnstart d-flex  flex-column justify-content-center mt-8 mb-10" > 
-                <p class id="info">Try an answer each question within in the time limit. Note each question answered incorrectly will subtract your time by 10 seconds</p>
+            <div class="d-flex  flex-column justify-content-center mt-8 mb-10" > 
+                <p id="info">Try an answer each question within in the time limit. Note each question answered incorrectly will subtract your time by 10 seconds</p>
                 <!-- <p id="info">When you are ready click on the start button... <h3>GOOD LUCK!</h3></p> -->
-                <button class="btn btn-primary btn-lg" id="btn-start">Start</button>
+                <button id="btn-start">Start</button>
             </div>
 
             <!--score-->
             <div class=" input-group mb-3 d-none" id="addscore">
                 <h5 class="d-block"><span id="score"></span></h5>
-                    <input type="text" class="form-control" placeholder="Enter your initials:"
-                    id="inputScore" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text btn btn-primary" id="btnScore">Submit</button>
+                    <input type="text" class="form-control" placeholder="Enter initials:"
+                    id="inputScore">
+                    <div>
+                        <button id="btnScore">Submit</button>
                     </div>
             </div>
         </div>

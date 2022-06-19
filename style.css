@@ -40,3 +40,25 @@ body {
     text-align: center;
     font-weight: bold;
 }
+#alert{
+    font-size: 1.5rem;
+    color: var(--lightBlue);
+}
+
+#title-item {
+    font-size: 1.5rem;
+	color: var(--orange);
+}
+
+#btnScore{
+    background-color: var(--orange);
+    border: 1px solid var(--black);
+    color: var(--black);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
