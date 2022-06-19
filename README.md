@@ -10,11 +10,11 @@ GIVEN I am taking a code quiz WHEN I click the start button THEN a timer starts 
 
 Mock-Up The following image shows the web application's appearance and functionality: 04-web-apis-homework-demo
 
-GitHub URL:
+GitHub URL: https://github.com/GlennAGeorge/Module-4-Challenge_JavaScript-Code-Quiz-Public
 
-VS code Live Server:
+VS code Live Server: http://127.0.0.1:5500/index.html
 
-GitHub Pages URL (Deployment):https://glennageorge.github.io/Module-4-Challenge_Code-Quiz/
+GitHub Pages URL (Deployment):https://glennageorge.github.io/Module-4-Challenge_JavaScript-Code-Quiz-Public/
 
 Support: glennadamgeorge@gmail.com
 
